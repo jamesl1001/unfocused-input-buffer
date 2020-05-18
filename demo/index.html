@@ -1,0 +1,15 @@
+<h1>Unfocused Input Buffer</h1>
+
+<ol>
+    <li>Without focusing the input, type something on your keyboard.</li>
+    <li>Hit tab or click on one of the input.</li>
+</ol>
+
+<input type="text" data-buffered class="test" />
+<input type="text" data-buffered class="test" />
+<input type="text" data-buffered class="test" />
+
+<script src="bundle.js"></script>
+<script>
+    Bundle.unfocusedInputBuffer({ selector: '.test' })
+</script>
