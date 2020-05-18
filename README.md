@@ -20,24 +20,28 @@ npm i unfocused-input-buffer --save
 
 ## Usage
 
-### HTML
+Add a class or data attribute to all the input fields you want to be buffered. The default is the `data-buffered` attribute.
 
-Add a class or data attribute to all the input fields you want to be buffered.
+Import and call the package with the optional options.
 
-The default is `data-buffered`.
+### Example A
 
-```html
+```jsx
 <input type="text" data-buffered />
-```
 
-### JavaScript
-
-Import and call the package with the optional options:
-
-```js
 import unfocusedInputBuffer from 'unfocused-input-buffer'
 
 unfocusedInputBuffer()
+```
+
+### Example B
+
+```jsx
+<input type="text" class="buffered" />
+
+import unfocusedInputBuffer from 'unfocused-input-buffer'
+
+unfocusedInputBuffer({ selector: '.buffered' })
 ```
 
 ## Options
